@@ -1,0 +1,192 @@
+.main-wrapper.contact {
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+}
+.class-name {
+  color: var(--blue-200);
+  font-size: 1.2rem;
+}
+
+.element {
+  color: var(--white-100);
+  font-size: 1.2rem;
+}
+
+.key-name {
+  color: var(--white-100);
+  margin-left: 1.2rem;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--blue-200);
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.title-container {
+  width: min(400px, 90vw);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title-contact {
+  font-size: 2rem;
+  color: var(--white-100);
+}
+
+.message-contact {
+  color: var(--gray-100);
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.list-contact {
+  counter-reset: line;
+  counter-increment: line 0;
+  position: relative;
+  white-space: pre-wrap; 
+  padding-left: 7rem;
+}
+
+.list-contact .line {
+  display: block;
+  line-height: 1.5em;
+}
+
+.list-contact .line:before {
+  font-size: 1rem;
+  font-weight: normal;
+  position: absolute;
+  left: -10px;
+  content: counter(line);
+  counter-increment: line;
+  display: inline-block;
+  border:none;
+  color: var(--gray-100);
+  font-family: 'Fira Code', monospace;
+  padding-left: 6rem;
+  border-left: 1px solid var(--gray-200);
+}
+
+/* Rotating Quote Style */
+.rotating-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: #00ffcc; /* Change to match your theme */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 1150px) {
+  .main-wrapper.contact {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .list-contact .line:before {
+    border-left: none;
+    padding-left: 1rem;
+  }
+
+  .list-contact {
+    padding-left: 1.6rem;
+  }
+
+  .title-contact {
+    font-size: 1.8rem;
+  }
+
+  .title-container {
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 4rem;
+  }
+}
+
+
+/* Background Animation */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle, #1e1e2f, #111111);
+  overflow: hidden;
+}
+
+.background-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://www.transparenttextures.com/patterns/circles.png");
+  opacity: 0.05;
+}
+
+/* Glow Hover for Social Links */
+.glow-hover a {
+  color: #00ffcc;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-hover a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc, 0 0 32px #00ffcc;
+  transform: scale(1.1);
+}
+
+/* Typing Animation */
+.typing {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-right: 3px solid #00ffcc;
+  white-space: nowrap;
+  width: fit-content;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from {
+    border-color: #00ffcc;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+/* Rotating Quote */
+.rotating-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: #00ffcc;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

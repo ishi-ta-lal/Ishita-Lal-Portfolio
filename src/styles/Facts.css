@@ -1,0 +1,90 @@
+/* Adjusted Facts.css */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--gray-400);
+    color: #c9d1d9; /* Softer white for readability */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.main-container {
+    padding: 20px;
+    /* text-align: center; */
+    min-height: 100vh; /* Ensure the content spans the full viewport height */
+}
+
+.title-facts {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #30363d;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-top: 20px; /* Add margin to ensure it's visible */
+}
+
+.facts-json-container {
+    background-color: #161b22;
+    border: 1px solid #30363d; /* Border for structure */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px; /* Restrict maximum width for better readability */
+    margin: 0 auto 40px; /* Center the container and add bottom margin */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+}
+
+.json-line {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 5px;
+    color: #e6edf3; /* Soft white for JSON text */
+    word-wrap: break-word; /* Ensure long words wrap */
+}
+
+.line-number {
+    color: #8b949e; /* Greyed-out line numbers */
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.json-text {
+    color: #c9d1d9; /* Adjusted for better readability */
+}
+
+.footer {
+    font-size: 0.9rem;
+    color: #8b949e; /* Subtle footer text */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #58a6ff; /* Footer links in the same blue as title */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 768px) {
+    .title-facts {
+        font-size: 2rem;
+    }
+
+    .facts-json-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .json-line {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
