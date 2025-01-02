@@ -7,7 +7,7 @@ import '../styles/Home.css';
 import image from '../images/profile.JPG';
 import { FiEye } from 'react-icons/fi';
 import MenuMobile from "../components/MenuMobile";
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 
 function Home() {
   return (
@@ -22,11 +22,22 @@ function Home() {
             <div className="home-content">
               <p><span className="span">{'<'}</span>    Hello 👋, I'm</p>
               <h1 className="name">Ishita Lal <span className="span">{'/ >'}</span></h1>
-              <Typical
-                steps={['Software Developer', 1000, 'AI Student', 1000, 'Web Development Student', 1000, 'Mobile Development Student', 1000]}
-                loop={Infinity}
-                wrapper="h2"
-              />
+              <h2>
+    <Typewriter
+      words={[
+        'Software Developer',
+        'AI Student',
+        'Web Development Student',
+        'Mobile Development Student',
+      ]}
+      loop={Infinity}
+      cursor
+      cursorStyle="|"
+      typeSpeed={70}
+      deleteSpeed={50}
+      delaySpeed={1000}
+    />
+  </h2>
               <a
   href="/Ishita_Intern.pdf"
   target="_blank"
