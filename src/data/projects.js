@@ -10,6 +10,15 @@ const projects = [
   },
   {
     type: 'web',
+    name: 'BookBridge',
+    description: '📖🌉 Connecting book donors and seekers through smart, optimized matching.',
+    src: 'dashboard.png',
+    repository: 'https://github.com/ishi-ta-lal/BookBridge',
+    site: '#',
+    technologies: ['Python','Flask','Sqlite','Matching Algorithm'],
+  },
+  {
+    type: 'web',
     name: 'Portfolio Website',
     description: 'A responsive portfolio showcasing skills, projects, and experience.',
     src: 'portfolio.jpg',
